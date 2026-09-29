@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cling Info Tech Works </title>
+  <meta name="description" content="Cling Info Tech Works is a premier end-to-end IT solutions provider delivering cutting-edge web development, mobile apps, ERPs, digital marketing, and dedicated engineering squads.">
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Custom Cursor Elements (Desktop only) -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Ambient Dynamic Backgrounds -->
+  <div class="page-bg" aria-hidden="true">
+    <div class="bg-mesh"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+  </div>
+
+  <!-- Floating Glass Navbar -->
+  <header class="navbar-wrapper" id="headerWrapper">
+    <div class="navbar" id="navbar">
+      <a class="logo" href="#home" aria-label="Cling home">
+        <img src="image.png" class = "logo">
+        <span class="logo-text">ling</span>
+      </a>
+
+
+      <nav class="nav-links" id="mainNav" aria-label="Main Navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#team">Team</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#solutions">Solutions</a>
+        <a class="nav-link" href="#resources">Resources</a>
+        <a class="nav-link" href="#clients">Clients</a>
+        <div class="nav-indicator" id="navIndicator" aria-hidden="true"></div>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button (Desktop) -->
+        <button class="theme-toggle-btn magnetic-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <span class="theme-icon-box">
+            <svg class="theme-svg svg-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-svg svg-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <a class="btn btn-nav contact-btn magnetic-btn" href="#contact">
+          <span>Contact Us</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <div class="logo">
+          <span class="logo-mark">C</span>
+          <span class="logo-text">ling</span>
+        </div>
+        <div class="drawer-header-actions">
+          <button class="theme-toggle-btn mobile-theme-btn" id="mobileThemeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+            <span class="theme-icon-box">
+              <svg class="theme-svg svg-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg class="theme-svg svg-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </span>
+          </button>
+          <button class="drawer-close-btn" id="drawerClose" aria-label="Close menu">✕</button>
+        </div>
+      </div>
+      <nav class="mobile-nav-links">
+        <a class="mobile-nav-link" href="#home">Home</a>
+        <a class="mobile-nav-link" href="#about">About Us</a>
+        <a class="mobile-nav-link" href="#team">Leadership Team</a>
+        <a class="mobile-nav-link" href="#services">Services</a>
+        <a class="mobile-nav-link" href="#solutions">Solutions</a>
+        <a class="mobile-nav-link" href="#resources">Resources</a>
+        <a class="mobile-nav-link" href="#clients">Clients</a>
+        <a class="mobile-nav-link" href="#testimonials">Testimonials</a>
+        <a class="btn btn-mobile-cta" href="#contact">Contact Us</a>
+      </nav>
+      <div class="mobile-drawer-footer">
+        <p>📞 +91 82646 43302</p>
+        <p>✉ info@clinginfotech.com</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!--  HERO SECTION  -->
+
+    <section class="hero-section section" id="home">
+      <!-- Interactive Ambient Particle Canvas -->
+      <canvas class="hero-particle-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+      <div class="hero-container">
+        <!-- Hero Copy -->
+        <div class="hero-copy">
+          <div class="eyebrow-badge fade-up">
+            <span class="eyebrow-pulse"></span>
+            <span class="eyebrow-text">Creative · Innovative · Reliable</span>
+          </div>
+
+          <h1 class="hero-title fade-up">
+            <span class="title-word">MAKING</span> <span class="title-word">YOUR</span><br>
+            <span class="gradient-text text-reveal">IDEAS HAPPEN!</span>
+          </h1>
+
+          <p class="hero-description fade-up">
+            We are an end-to-end IT solutions powerhouse engineering high-performance mobile applications, bespoke web architectures, custom ERP systems, and high-impact digital growth for visionary enterprises.
+          </p>
+
+          <div class="hero-actions fade-up">
+            <a class="btn btn-primary magnetic-btn" href="#contact">
+              <span>Get Started</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a class="btn btn-secondary magnetic-btn" href="#services">
+              <span>Our Services</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 16 16 12 12 8"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero-trust-bar fade-up">
+            <div class="trust-avatars">
+              <span class="avatar" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80');"></span>
+              <span class="avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80');"></span>
+              <span class="avatar" style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80');"></span>
+              <span class="avatar" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80');"></span>
+            </div>
+            <div class="trust-text">
+              <div class="stars">★★★★★</div>
+              <span>Trusted by <b>350+</b> industry leaders worldwide</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual with Asymmetric Container, Layered Shapes, and Parallax Cards -->
+        <div class="hero-visual" id="heroVisual">
+          <!-- Background Glow Blobs -->
+          <div class="visual-blob blob-red" data-parallax="-0.04" aria-hidden="true"></div>
+          <div class="visual-blob blob-blue" data-parallax="0.05" aria-hidden="true"></div>
+          <div class="visual-blob blob-purple" data-parallax="-0.02" aria-hidden="true"></div>
+          <div class="dot-matrix" data-parallax="0.03" aria-hidden="true"></div>
+          <div class="abstract-shape shape-ring" data-parallax="0.06" aria-hidden="true"></div>
+          <div class="abstract-shape shape-plus" data-parallax="-0.05" aria-hidden="true">+</div>
+
+          <!-- Main Asymmetric Rounded Image Wrapper with 3D Tilt & Spotlight -->
+          <div class="hero-image-container tilt-card card-spotlight" id="heroImageContainer" data-parallax="0.02">
+            <div class="hero-image-border">
+              <div class="hero-image-wrap">
+                <img 
+                  src="hero.png" 
+                  alt="Cling IT agency software engineers collaborating on innovative products"
+                  loading="eager"
+                  id="heroMainImage"
+                >
+                <div class="image-overlay-tint"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Glass Cards (Glassmorphism + Parallax) -->
+          <!-- Card 1: 350+ Happy Clients -->
+          <div class="floating-glass-card card-clients tilt-card card-spotlight" data-parallax="0.07" style="animation-delay: 0s;">
+            <div class="card-icon-wrap icon-red">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="card-content">
+              <span class="card-stat">350+</span>
+              <span class="card-label">Happy Clients</span>
+            </div>
+          </div>
+
+          <!-- Card 2: 390+ Projects -->
+          <div class="floating-glass-card card-projects tilt-card card-spotlight" data-parallax="-0.06" style="animation-delay: 1.2s;">
+            <div class="card-icon-wrap icon-blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <div class="card-content">
+              <span class="card-stat">390+</span>
+              <span class="card-label">Projects Completed</span>
+            </div>
+          </div>
+
+          <!-- Card 3: 10+ Countries -->
+          <div class="floating-glass-card card-countries tilt-card card-spotlight" data-parallax="0.05" style="animation-delay: 2.1s;">
+            <div class="card-icon-wrap icon-purple">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <div class="card-content">
+              <span class="card-stat">10+</span>
+              <span class="card-label">Countries Served</span>
+            </div>
+          </div>
+
+          <!-- Card 4: 24/7 Support -->
+          <div class="floating-glass-card card-support tilt-card card-spotlight" data-parallax="-0.04" style="animation-delay: 0.7s;">
+            <div class="card-icon-wrap icon-green">
+              <span class="status-pulse-dot"></span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+              </svg>
+            </div>
+            <div class="card-content">
+              <span class="card-stat">24/7</span>
+              <span class="card-label">Active Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--  ABOUT / COMPANY STORY & ANIMATED STATS -->
+
+    <section class="about-section section" id="about">
+      <div class="about-container">
+        <!-- Left: Image Collage & Experience Badge -->
+        <div class="about-visual reveal-left">
+          <div class="collage-main-img-wrap tilt-card card-spotlight">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Cling strategy meeting" loading="lazy">
+          </div>
+          <div class="collage-secondary-img-wrap tilt-card card-spotlight">
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" alt="Software engineering presentation" loading="lazy">
+          </div>
+          <div class="experience-badge-card">
+            <span class="exp-number">12+</span>
+            <span class="exp-text">Years of Engineering Excellence</span>
+          </div>
+        </div>
+
+        <!-- Right: Story, Vision & Action -->
+        <div class="about-content reveal-right">
+          <div class="section-tag">
+            <span class="tag-icon">✦</span>
+            <span>About Cling Info Tech Works</span>
+          </div>
+          <h2 class="section-title">
+            Architecting Future-Proof Tech With <span>Uncompromising Quality</span>
+          </h2>
+          <p class="about-lead">
+            Headquartered in Noida with strategic delivery hubs in Pune and Moradabad, Cling Info Tech Works is a premier technology transformation partner for ambitious scale-ups and global industry leaders.
+          </p>
+          <p class="about-desc">
+            We blend high-calibre engineering, human-centred product design, and rigorous cloud automation to build software platforms that outlast rapid technological shifts. Whether you need full-cycle custom software, agile squad augmentation, or an end-to-end enterprise rebuild, our team delivers with velocity and precision.
+          </p>
+
+          <div class="about-checkmarks">
+            <div class="check-item">
+              <span class="check-icon">✓</span>
+              <span>Full-Stack Custom Engineering</span>
+            </div>
+            <div class="check-item">
+              <span class="check-icon">✓</span>
+              <span>Cloud-Native & Scalable Architectures</span>
+            </div>
+            <div class="check-item">
+              <span class="check-icon">✓</span>
+              <span>Dedicated Agile Squads</span>
+            </div>
+            <div class="check-item">
+              <span class="check-icon">✓</span>
+              <span>24/7 Mission-Critical SLA Support</span>
+            </div>
+          </div>
+
+          <div class="about-cta-row">
+            <a class="btn btn-primary magnetic-btn" href="#contact">
+              <span>Partner With Us</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Animated Stats Grid with Spotlight -->
+      <div class="stats-glass-grid reveal-up" id="statsGrid">
+        <div class="stat-card tilt-card card-spotlight">
+          <div class="stat-card-icon icon-red">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <div class="stat-number-wrap">
+            <span class="counter" data-target="32387122" data-format="locale">0</span>
+          </div>
+          <span class="stat-title">Lines of Code Deployed</span>
+          <span class="stat-sub">Clean, unit-tested architectures</span>
+        </div>
+
+        <div class="stat-card tilt-card card-spotlight">
+          <div class="stat-card-icon icon-blue">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div class="stat-number-wrap">
+            <span class="counter" data-target="350" data-suffix="+">0</span>
+          </div>
+          <span class="stat-title">Happy Clients</span>
+          <span class="stat-sub">From startups to enterprises</span>
+        </div>
+
+        <div class="stat-card tilt-card card-spotlight">
+          <div class="stat-card-icon icon-purple">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <div class="stat-number-wrap">
+            <span class="counter" data-target="390" data-suffix="+">0</span>
+          </div>
+          <span class="stat-title">Projects Completed</span>
+          <span class="stat-sub">100% on-time delivery record</span>
+        </div>
+
+        <div class="stat-card tilt-card card-spotlight">
+          <div class="stat-card-icon icon-orange">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+          </div>
+          <div class="stat-number-wrap">
+            <span class="counter" data-target="1500" data-suffix="+">0</span>
+          </div>
+          <span class="stat-title">Coffees With Clients</span>
+          <span class="stat-sub">Forging collaborative relationships</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!--  LEADERSHIP TEAM SECTION                       -->
+    <!-- ============================================== -->
+    <section class="team-section section" id="team">
+      <div class="section-heading reveal-up">
+        <div class="section-tag">
+          <span class="tag-icon">👥</span>
+          <span>Executive Leadership</span>
+        </div>
+        <h2 class="team-main-title">Meet Our Leadership Team</h2>
+        <div class="team-title-divider" aria-hidden="true"></div>
+        <p class="team-subtitle">
+          Driven by visionary leadership and engineering excellence, guiding Cling Info Tech Works toward shaping modern digital transformation globally.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Team Member 1: Ramesh Singh -->
+        <article class="team-card tilt-card card-spotlight reveal-up" style="--card-delay: 0.1s;">
+          <div class="team-avatar-wrap">
+            <img 
+              src="leader-ramesh.png" 
+              alt="Ramesh Singh - Co-founder & Director" 
+              class="team-avatar-img"
+              loading="lazy"
+            >
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Ramesh Singh</h3>
+            <span class="team-role">Co-founder & Director</span>
+          </div>
+        </article>
+
+        <!-- Team Member 2: Ashi Gupta -->
+        <article class="team-card tilt-card card-spotlight reveal-up" style="--card-delay: 0.2s;">
+          <div class="team-avatar-wrap">
+            <img 
+              src="leader-ashi.png" 
+              alt="Ashi Gupta - Managing Director" 
+              class="team-avatar-img"
+              loading="lazy"
+            >
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Ashi Gupta</h3>
+            <span class="team-role">Managing Director</span>
+          </div>
+        </article>
+
+        <!-- Team Member 3: Akshay Gupta -->
+        <article class="team-card tilt-card card-spotlight reveal-up" style="--card-delay: 0.3s;">
+          <div class="team-avatar-wrap">
+            <img 
+              src="leader-akshay.png" 
+              alt="Akshay Gupta - CEO" 
+              class="team-avatar-img"
+              loading="lazy"
+            >
+          </div>
+          <div class="team-info">
+            <h3 class="team-name">Akshay Gupta</h3>
+            <span class="team-role">CEO</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GLOBAL PRESENCE SECTION -->
+
+    <section class="global-section section" id="global">
+      <div class="global-bg-map" aria-hidden="true">
+        <!-- Stylized World Map SVG with Live Radar Pings -->
+        <svg viewBox="0 0 1000 500" fill="none" xmlns="http://www.w3.org/2000/svg" class="world-svg">
+          <defs>
+            <pattern id="dotPattern" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="1.5" fill="#2477ff" fill-opacity="0.12"></circle>
+            </pattern>
+          </defs>
+          <rect width="1000" height="500" fill="url(#dotPattern)"></rect>
+          <!-- Continents ambient contours -->
+          <path d="M180,110 Q240,90 280,140 T260,240 T190,300 T150,210 Z" fill="rgba(36, 119, 255, 0.03)" stroke="rgba(36,119,255,0.08)" stroke-width="1.5"/>
+          <path d="M280,310 Q340,300 370,360 T350,470 T280,450 T260,370 Z" fill="rgba(255, 59, 53, 0.02)" stroke="rgba(255,59,53,0.06)" stroke-width="1.5"/>
+          <path d="M470,100 Q550,90 590,140 T570,220 T490,200 T460,130 Z" fill="rgba(36, 119, 255, 0.03)" stroke="rgba(36,119,255,0.08)" stroke-width="1.5"/>
+          <path d="M500,230 Q580,240 600,320 T560,430 T480,380 T470,290 Z" fill="rgba(36, 119, 255, 0.02)" stroke="rgba(36,119,255,0.06)" stroke-width="1.5"/>
+          <path d="M620,90 Q760,70 850,130 T880,240 T780,280 T660,200 Z" fill="rgba(255, 59, 53, 0.03)" stroke="rgba(255,59,53,0.07)" stroke-width="1.5"/>
+          <path d="M780,330 Q870,330 890,390 T840,460 T760,420 Z" fill="rgba(36, 119, 255, 0.03)" stroke="rgba(36,119,255,0.08)" stroke-width="1.5"/>
+
+          <!-- Interactive Global Hub Radar Pings -->
+          <g class="world-pings" id="worldPings">
+            <!-- India: IN -->
+            <g class="map-ping-point" data-country="IN">
+              <circle cx="670" cy="220" r="4.5" class="ping-core"></circle>
+              <circle cx="670" cy="220" r="14" class="ping-ring ping-ring-1"></circle>
+              <circle cx="670" cy="220" r="25" class="ping-ring ping-ring-2"></circle>
+              <text x="670" y="242" class="ping-label">IN</text>
+            </g>
+            <!-- Saudi Arabia: SA -->
+            <g class="map-ping-point" data-country="SA">
+              <circle cx="570" cy="215" r="4" class="ping-core"></circle>
+              <circle cx="570" cy="215" r="13" class="ping-ring ping-ring-1"></circle>
+              <text x="570" y="235" class="ping-label">SA</text>
+            </g>
+            <!-- South Africa: ZA -->
+            <g class="map-ping-point" data-country="ZA">
+              <circle cx="535" cy="390" r="4" class="ping-core"></circle>
+              <circle cx="535" cy="390" r="13" class="ping-ring ping-ring-1"></circle>
+              <text x="535" y="410" class="ping-label">ZA</text>
+            </g>
+            <!-- United States: US -->
+            <g class="map-ping-point" data-country="US">
+              <circle cx="230" cy="170" r="4.5" class="ping-core"></circle>
+              <circle cx="230" cy="170" r="14" class="ping-ring ping-ring-1"></circle>
+              <circle cx="230" cy="170" r="25" class="ping-ring ping-ring-2"></circle>
+              <text x="230" y="192" class="ping-label">US</text>
+            </g>
+            <!-- Oman: OM -->
+            <g class="map-ping-point" data-country="OM">
+              <circle cx="615" cy="230" r="3.5" class="ping-core"></circle>
+              <circle cx="615" cy="230" r="12" class="ping-ring ping-ring-1"></circle>
+              <text x="615" y="250" class="ping-label">OM</text>
+            </g>
+            <!-- Dubai UAE: AE -->
+            <g class="map-ping-point" data-country="AE">
+              <circle cx="605" cy="210" r="4" class="ping-core"></circle>
+              <circle cx="605" cy="210" r="14" class="ping-ring ping-ring-1"></circle>
+              <text x="605" y="230" class="ping-label">AE</text>
+            </g>
+            <!-- Singapore: SG -->
+            <g class="map-ping-point" data-country="SG">
+              <circle cx="745" cy="275" r="4" class="ping-core"></circle>
+              <circle cx="745" cy="275" r="14" class="ping-ring ping-ring-1"></circle>
+              <text x="745" y="295" class="ping-label">SG</text>
+            </g>
+            <!-- Ireland: IE -->
+            <g class="map-ping-point" data-country="IE">
+              <circle cx="460" cy="130" r="3.5" class="ping-core"></circle>
+              <circle cx="460" cy="130" r="12" class="ping-ring ping-ring-1"></circle>
+              <text x="460" y="150" class="ping-label">IE</text>
+            </g>
+            <!-- Mauritius: MU -->
+            <g class="map-ping-point" data-country="MU">
+              <circle cx="640" cy="360" r="3.5" class="ping-core"></circle>
+              <circle cx="640" cy="360" r="12" class="ping-ring ping-ring-1"></circle>
+              <text x="640" y="380" class="ping-label">MU</text>
+            </g>
+            <!-- Australia: AU -->
+            <g class="map-ping-point" data-country="AU">
+              <circle cx="840" cy="375" r="4" class="ping-core"></circle>
+              <circle cx="840" cy="375" r="14" class="ping-ring ping-ring-1"></circle>
+              <text x="840" y="395" class="ping-label">AU</text>
+            </g>
+            <!-- United Kingdom: GB -->
+            <g class="map-ping-point" data-country="GB">
+              <circle cx="480" cy="130" r="4" class="ping-core"></circle>
+              <circle cx="480" cy="130" r="14" class="ping-ring ping-ring-1"></circle>
+              <text x="480" y="150" class="ping-label">GB</text>
+            </g>
+            <!-- Spain: ES -->
+            <g class="map-ping-point" data-country="ES">
+              <circle cx="475" cy="175" r="3.5" class="ping-core"></circle>
+              <circle cx="475" cy="175" r="12" class="ping-ring ping-ring-1"></circle>
+              <text x="475" y="195" class="ping-label">ES</text>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="section-heading reveal-up">
+        <div class="section-tag">
+          <span class="tag-icon">🌍</span>
+          <span>Worldwide Footprint</span>
+        </div>
+        <h2>Our <span>Global Presence</span></h2>
+        <p>Delivering high-grade enterprise software solutions across diverse global markets, jurisdictions, and cultures.</p>
+      </div>
+
+      <div class="country-grid reveal-up">
+        <div class="country-card tilt-card card-spotlight" data-country="IN">
+          <div class="country-flag-wrap">
+            <span class="flag-emoji">🇮🇳</span>
+            <span class="country-code">IN</span>
+          </div>
+          <div class="country-info">
+            <b class="country-name">India</b>
+            <span class="country-meta">Primary Delivery HQ</span>
+          </div>
+          <div class="country-hover-glow"></div>
+        </div>
+
+        <div class="country-card tilt-card card-spotlight" data-country="SA">
+          <div class="country-flag-wrap">
+            <span class="flag-emoji">🇸🇦</span>
+            <span class="country-code">SA</span>
+          </div>
+          <div class="country-info">
+            <b class="country-name">Saudi Arabia</b>
+            <span class="country-meta">Middle East Hub</span>
+          </div>
+          <div class="country-hover-glow"></div>
+        </div>
+
+        <div class="country-card tilt-card card-spotlight" data-country="ZA">
+          <div class="country-flag-wrap">
+            <span class="flag-emoji">🇿🇦</span>
+            <span class="country-code">ZA</span>
+          </div>
+          <div class="country-info">
+            <b class="country-name">South Africa</b>
+            <span class="country-meta">African Enterprise</span>
+          </div>
+          <div class="country-hover-glow"></div>
+        </div>
+
+        <div class="country-card tilt-card card-spotlight" data-country="US">
+          <div class="country-flag-wrap">
+            <span class="flag-emoji">🇺🇸</span>
+            <span class="country-code">US</span>
+          </div>
+          <div class="country-info">
+            <b class="country-name">United States</b>
+            <span class="country-meta">Silicon Valley & NY</span>
+          </div>
+          <div class="country-hover-glow"></div>
+        </div>
+
+        <div class="country-card tilt-card card-spotlight" data-country="OM">
+          <div class="country-flag-wrap">
+            <span class="flag-emoji">🇴🇲</span>
+            <span class="country-code">OM</span>
+          </div>
+          <div class="country-info">
+            <b class="country-name">Oman</b>
+            <span class="country-meta">Gulf Operations</span>
+          </div>
+          <div class="country-hover-glow"></div>
+        </div>
+
+        <div class="country-card tilt-card card-spotlight" data-country="AE">
+          <div class="country-flag-wrap">
+            <span class="flag-emoji">🇦🇪</span>
+            <span class="country-code">AE</span>
+          </div>
+          <div class="country-info">
+            <b class="country-name">Dubai (UAE)</b>
+            <span class="country-meta">MENA Tech Center</span>
+          </div>
+          <div class="country-hover-glow"></div>
+        </div>
+
+        <div class="country-card tilt-card card-spotlight" data-country="SG">
+          <div class="country-flag-wrap">
+            <span class="flag-emoji">🇸🇬</span>
+            <span class="country-code">SG</span>
+          </div>
+          <div class="country-info">
+            <b class="country-name">Singapore</b>
+            <span class="country-meta">APAC FinTech Hub</span>
+          </div>
+          <div class="country-hover-glow"></div>
+        </div>
+
+        <div class="country-card tilt-card card-spotlight" data-country="IE">
+          <div class="country-flag-wrap">
+            <span class="flag-emoji">🇮🇪</span>
+            <span class="country-code">IE</span>
+          </div>
+          <div class="country-info">
+            <b class="country-name">Ireland</b>
+            <span class="country-meta">European Tech Gateway</span>
+          </div>
+          <div class="country-hover-glow"></div>
+        </div>
+
+        <div class="country-card tilt-card card-spotlight" data-country="MU">
+          <div class="country-flag-wrap">
+            <span class="flag-emoji">🇲🇺</span>
+            <span class="country-code">MU</span>
+          </div>
+          <div class="country-info">
+            <b class="country-name">Mauritius</b>
+            <span class="country-meta">Indian Ocean Hub</span>
+          </div>
+          <div class="country-hover-glow"></div>
+        </div>
+
+        <div class="country-card tilt-card card-spotlight" data-country="AU">
+          <div class="country-flag-wrap">
+            <span class="flag-emoji">🇦🇺</span>
+            <span class="country-code">AU</span>
+          </div>
+          <div class="country-info">
+            <b class="country-name">Australia</b>
+            <span class="country-meta">Sydney & Melbourne</span>
+          </div>
+          <div class="country-hover-glow"></div>
+        </div>
+
+        <div class="country-card tilt-card card-spotlight" data-country="GB">
+          <div class="country-flag-wrap">
+            <span class="flag-emoji">🇬🇧</span>
+            <span class="country-code">GB</span>
+          </div>
+          <div class="country-info">
+            <b class="country-name">United Kingdom</b>
+            <span class="country-meta">London Financial Tech</span>
+          </div>
+          <div class="country-hover-glow"></div>
+        </div>
+
+        <div class="country-card tilt-card card-spotlight" data-country="ES">
+          <div class="country-flag-wrap">
+            <span class="flag-emoji">🇪🇸</span>
+            <span class="country-code">ES</span>
+          </div>
+          <div class="country-info">
+            <b class="country-name">Spain</b>
+            <span class="country-meta">Southern Europe</span>
+          </div>
+          <div class="country-hover-glow"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--  SERVICES SECTION WITH MODERN SVG ICONS -->
+
+    <section class="services-section section" id="services">
+      <div class="services-ambient-blob blob-left" aria-hidden="true"></div>
+      <div class="services-ambient-blob blob-right" aria-hidden="true"></div>
+
+      <div class="section-heading reveal-up">
+        <div class="section-tag">
+          <span class="tag-icon">⚡</span>
+          <span>Core Capabilities</span>
+        </div>
+        <h2>Engineering <span>Services</span> Built for Impact</h2>
+        <p>Comprehensive technical capabilities spanning mobile systems, modern web architectures, enterprise automation, and brand growth.</p>
+      </div>
+
+      <div class="service-grid">
+        <!-- Service 1: App Development -->
+        <article class="service-card tilt-card card-spotlight reveal-up" style="--card-delay: 0.1s;">
+          <div class="service-card-header">
+            <div class="service-icon-wrap icon-blue">
+              <!-- Smartphone SVG Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <span class="service-badge">iOS & Android</span>
+          </div>
+          <h3>App Development</h3>
+          <p>Native and high-performance cross-platform mobile apps built with React Native and Flutter. Designed for seamless user engagement, bank-grade encryption, and offline-first reliability.</p>
+          <div class="service-card-footer">
+            <span class="service-link-text">Explore Solutions</span>
+            <a href="#contact" class="service-arrow" aria-label="Learn more about App Development">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Service 2: Web Design & Frontend -->
+        <article class="service-card tilt-card card-spotlight reveal-up" style="--card-delay: 0.2s;">
+          <div class="service-card-header">
+            <div class="service-icon-wrap icon-red">
+              <!-- Web/Browser SVG Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <span class="service-badge">UI/UX & Web</span>
+          </div>
+          <h3>Web Design</h3>
+          <p>Don’t let your digital home be just another URL. We engineer visually striking, ultra-fast web platforms with responsive ergonomics, micro-interactions, and conversion-focused architectures.</p>
+          <div class="service-card-footer">
+            <span class="service-link-text">Explore Solutions</span>
+            <a href="#contact" class="service-arrow" aria-label="Learn more about Web Design">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Service 3: ERPs -->
+        <article class="service-card tilt-card card-spotlight reveal-up" style="--card-delay: 0.3s;">
+          <div class="service-card-header">
+            <div class="service-icon-wrap icon-purple">
+              <!-- Database/ERP SVG Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <span class="service-badge">Enterprise Systems</span>
+          </div>
+          <h3>ERPs & Workflow Platforms</h3>
+          <p>Tailor-made Enterprise Resource Planning systems integrating inventory, human resources, accounting, CRM, and logistics into an unified, real-time command dashboard.</p>
+          <div class="service-card-footer">
+            <span class="service-link-text">Explore Solutions</span>
+            <a href="#contact" class="service-arrow" aria-label="Learn more about ERPs">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Service 4: Digital Marketing -->
+        <article class="service-card tilt-card card-spotlight reveal-up" style="--card-delay: 0.4s;">
+          <div class="service-card-header">
+            <div class="service-icon-wrap icon-orange">
+              <!-- Target/Marketing SVG Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <span class="service-badge">Growth & SEO</span>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>High-ROI programmatic growth strategies, algorithmic SEO, conversion-rate optimization (CRO), and targeted acquisition funnels that scale your enterprise pipeline predictably.</p>
+          <div class="service-card-footer">
+            <span class="service-link-text">Explore Solutions</span>
+            <a href="#contact" class="service-arrow" aria-label="Learn more about Digital Marketing">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Service 5: Social Media Marketing -->
+        <article class="service-card tilt-card card-spotlight reveal-up" style="--card-delay: 0.5s;">
+          <div class="service-card-header">
+            <div class="service-icon-wrap icon-cyan">
+              <!-- Share/Social SVG Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+              </svg>
+            </div>
+            <span class="service-badge">Brand & Reach</span>
+          </div>
+          <h3>Social Media Marketing</h3>
+          <p>Elevate your corporate brand narrative across LinkedIn, Instagram, X, and YouTube with cinematic creative assets, thought-leadership campaigns, and active community engagement.</p>
+          <div class="service-card-footer">
+            <span class="service-link-text">Explore Solutions</span>
+            <a href="#contact" class="service-arrow" aria-label="Learn more about Social Media Marketing">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Service 6: IT Team for Entrepreneurship -->
+        <article class="service-card tilt-card card-spotlight reveal-up" style="--card-delay: 0.6s;">
+          <div class="service-card-header">
+            <div class="service-icon-wrap icon-indigo">
+              <!-- Rocket/Team SVG Icon -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                <path d="M9 12H4s.55-3.03 2-4.5c1.62-1.63 5-1.5 5-1.5"></path>
+                <path d="M12 15v5s3.03-.55 4.5-2c1.63-1.62 1.5-5 1.5-5"></path>
+              </svg>
+            </div>
+            <span class="service-badge">Dedicated Squad</span>
+          </div>
+          <h3>IT Team for Entrepreneurship</h3>
+          <p>Get a pre-vetted, elite squad of product managers, UI/UX architects, and full-stack engineers dedicated entirely to your startup or enterprise venture. Fast kickoff, zero hiring friction.</p>
+          <div class="service-card-footer">
+            <span class="service-link-text">Explore Solutions</span>
+            <a href="#contact" class="service-arrow" aria-label="Learn more about Dedicated IT Team">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!--  SOLUTIONS SECTION & MODERN BENTO GRID -->
+
+    <section class="solutions-section section" id="solutions">
+      <div class="section-heading reveal-up">
+        <div class="section-tag">
+          <span class="tag-icon">⬡</span>
+          <span>Bespoke Architecture</span>
+        </div>
+        <h2>Enterprise <span>Solutions</span> Bento Grid</h2>
+        <p>Purpose-engineered architectures addressing critical modernization bottlenecks for enterprise and high-growth startups.</p>
+      </div>
+
+      <div class="bento-grid">
+        <div class="bento-card bento-large bento-card-1 tilt-card card-spotlight reveal-up">
+          <div class="bento-num">01</div>
+          <div class="bento-badge">Flagship Offering</div>
+          <h3>Build Digital Products</h3>
+          <p class="bento-desc">
+            Complete digital lifecycle transformation from initial concept to high-scale production. We modernize legacy codebases, architect cloud-first platforms, and build user-loved digital journeys.
+          </p>
+          <div class="bento-features">
+            <span class="pill-chip">Microservices</span>
+            <span class="pill-chip">API Integrations</span>
+            <span class="pill-chip">Event-Driven Architecture</span>
+            <span class="pill-chip">Omnichannel UX</span>
+          </div>
+          <div class="bento-action-row">
+            <a href="#contact" class="bento-link">
+              <span>Modernize Your Enterprise</span>
+              <span class="bento-arrow">→</span>
+            </a>
+          </div>
+          <div class="bento-visual-preview preview-code">
+            <div class="code-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="file-name">AppArchitecture.config.ts</span>
+            </div>
+            <code>const system = await Cling.deployModernStack({ cloud: "AWS", scale: "auto", security: "zero-trust" });<span class="typing-cursor"></span></code>
+          </div>
+        </div>
+
+
+        <div class="bento-card bento-medium bento-card-2 tilt-card card-spotlight reveal-up">
+          <div class="bento-num">02</div>
+          <div class="bento-badge">Next-Gen Intelligence</div>
+          <h3>AI & Machine Learning Solutions</h3>
+          <p class="bento-desc">
+            Custom Large Language Model (LLM) agents, automated predictive workflows, NLP document processing, and intelligent recommendation engines embedded into your core business logic.
+          </p>
+          <div class="ai-pulse-indicator">
+            <span class="ai-core"></span>
+            <span class="ai-wave wave-1"></span>
+            <span class="ai-wave wave-2"></span>
+          </div>
+          <div class="bento-features">
+            <span class="pill-chip">Custom LLMs</span>
+            <span class="pill-chip">RAG Pipelines</span>
+            <span class="pill-chip">Predictive Models</span>
+          </div>
+          <div class="bento-action-row">
+            <a href="#contact" class="bento-link">
+              <span>Deploy AI Systems</span>
+              <span class="bento-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="bento-card bento-small bento-card-3 tilt-card card-spotlight reveal-up">
+          <div class="bento-num">03</div>
+          <div class="bento-badge">DevOps & Cloud</div>
+          <h3>Cloud Solutions</h3>
+          <p class="bento-desc">
+            High-availability AWS, Azure, and Google Cloud infrastructure with Docker containers, automated CI/CD pipelines, and 99.99% uptime guarantees.
+          </p>
+          <div class="live-status-chip">
+            <span class="live-dot pulse"></span>
+            <span>99.99% Live Uptime</span>
+          </div>
+          <div class="bento-action-row">
+            <a href="#contact" class="bento-link">
+              <span>Cloud Advisory</span>
+              <span class="bento-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="bento-card bento-small bento-card-4 tilt-card card-spotlight reveal-up">
+          <div class="bento-num">04</div>
+          <div class="bento-badge">Enterprise Shield</div>
+          <h3>Cyber Security</h3>
+          <p class="bento-desc">
+            Zero-trust architecture, automated vulnerability scanning, SOC2/ISO compliance readiness, end-to-end data encryption, and resilient penetration testing.
+          </p>
+          <div class="security-shield-glow">
+            <span class="shield-tag">SOC2 · ISO 27001 Ready</span>
+            <div class="shield-scan-beam"></div>
+          </div>
+          <div class="bento-action-row">
+            <a href="#contact" class="bento-link">
+              <span>Audit Security</span>
+              <span class="bento-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="bento-card bento-large bento-card-5 tilt-card card-spotlight reveal-up">
+          <div class="bento-num">05</div>
+          <div class="bento-badge">Turn-Key Execution</div>
+          <h3>Dedicated Development Team & Startup Incubation</h3>
+          <p class="bento-desc">
+            Scale your technical velocity overnight. We supply vetted senior engineers, solution architects, and SCRUM masters who seamlessly integrate into your workflow, shipping features sprint by sprint.
+          </p>
+          <div class="sprint-progress-widget">
+            <div class="sprint-info">
+              <span>Active Sprint Velocity</span>
+              <b>98.4% On-Track</b>
+            </div>
+            <div class="sprint-progress-bar">
+              <div class="sprint-fill"></div>
+            </div>
+          </div>
+          <div class="bento-features">
+            <span class="pill-chip">Agile Sprints</span>
+            <span class="pill-chip">Fast Onboarding (&lt; 5 Days)</span>
+            <span class="pill-chip">Senior Engineers</span>
+            <span class="pill-chip">Direct Slack/Jira Access</span>
+          </div>
+          <div class="bento-action-row">
+            <a href="#contact" class="bento-link">
+              <span>Assemble Your Squad</span>
+              <span class="bento-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!--  AI & TECHNOLOGY SECTION (FLOATING BADGES) -->
+    <!-- ============================================== -->
+    <section class="tech-section section" id="resources">
+      <div class="section-heading reveal-up">
+        <div class="section-tag">
+          <span class="tag-icon">⚙</span>
+          <span>Ecosystem & Stack</span>
+        </div>
+        <h2>Technologies Powering <span>Your Vision</span></h2>
+        <p>We leverage industry-standard modern frameworks, distributed cloud databases, and cutting-edge intelligence runtimes.</p>
+      </div>
+
+      <div class="tech-badge-cloud reveal-up" id="techBadgeCloud">
+        <div class="tech-badge" style="--drift-time: 6s; --drift-delay: 0s;">
+          <span class="tech-icon-dot dot-blue"></span>
+          <span class="tech-name">React</span>
+          <span class="tech-sub">UI Library</span>
+        </div>
+        <div class="tech-badge" style="--drift-time: 7s; --drift-delay: 1.2s;">
+          <span class="tech-icon-dot dot-green"></span>
+          <span class="tech-name">Node.js</span>
+          <span class="tech-sub">Runtime</span>
+        </div>
+        <div class="tech-badge" style="--drift-time: 6.5s; --drift-delay: 0.8s;">
+          <span class="tech-icon-dot dot-dark"></span>
+          <span class="tech-name">Next.js</span>
+          <span class="tech-sub">Full Stack</span>
+        </div>
+        <div class="tech-badge" style="--drift-time: 8s; --drift-delay: 2.1s;">
+          <span class="tech-icon-dot dot-blue"></span>
+          <span class="tech-name">TypeScript</span>
+          <span class="tech-sub">Language</span>
+        </div>
+        <div class="tech-badge" style="--drift-time: 7.2s; --drift-delay: 1.5s;">
+          <span class="tech-icon-dot dot-green"></span>
+          <span class="tech-name">MongoDB</span>
+          <span class="tech-sub">NoSQL DB</span>
+        </div>
+        <div class="tech-badge" style="--drift-time: 6.8s; --drift-delay: 0.4s;">
+          <span class="tech-icon-dot dot-orange"></span>
+          <span class="tech-name">Java</span>
+          <span class="tech-sub">Enterprise</span>
+        </div>
+        <div class="tech-badge" style="--drift-time: 7.5s; --drift-delay: 1.9s;">
+          <span class="tech-icon-dot dot-blue"></span>
+          <span class="tech-name">Python</span>
+          <span class="tech-sub">AI & Backend</span>
+        </div>
+        <div class="tech-badge" style="--drift-time: 6.3s; --drift-delay: 2.4s;">
+          <span class="tech-icon-dot dot-orange"></span>
+          <span class="tech-name">AWS</span>
+          <span class="tech-sub">Cloud Infra</span>
+        </div>
+        <div class="tech-badge" style="--drift-time: 7.8s; --drift-delay: 0.6s;">
+          <span class="tech-icon-dot dot-cyan"></span>
+          <span class="tech-name">Docker</span>
+          <span class="tech-sub">Containers</span>
+        </div>
+        <div class="tech-badge highlight-badge" style="--drift-time: 6.2s; --drift-delay: 1.1s;">
+          <span class="tech-icon-dot dot-red"></span>
+          <span class="tech-name">AI & LLMs</span>
+          <span class="tech-sub">Neural Nets</span>
+        </div>
+        <div class="tech-badge" style="--drift-time: 7.1s; --drift-delay: 2.8s;">
+          <span class="tech-icon-dot dot-purple"></span>
+          <span class="tech-name">Machine Learning</span>
+          <span class="tech-sub">PyTorch</span>
+        </div>
+        <div class="tech-badge" style="--drift-time: 6.9s; --drift-delay: 1.7s;">
+          <span class="tech-icon-dot dot-blue"></span>
+          <span class="tech-name">Kubernetes</span>
+          <span class="tech-sub">Orchestration</span>
+        </div>
+        <div class="tech-badge" style="--drift-time: 7.4s; --drift-delay: 0.9s;">
+          <span class="tech-icon-dot dot-cyan"></span>
+          <span class="tech-name">Flutter</span>
+          <span class="tech-sub">Cross-Platform</span>
+        </div>
+        <div class="tech-badge" style="--drift-time: 6.6s; --drift-delay: 2.2s;">
+          <span class="tech-icon-dot dot-blue"></span>
+          <span class="tech-name">PostgreSQL</span>
+          <span class="tech-sub">Relational DB</span>
+        </div>
+        <div class="tech-badge" style="--drift-time: 8.2s; --drift-delay: 1.3s;">
+          <span class="tech-icon-dot dot-red"></span>
+          <span class="tech-name">Redis</span>
+          <span class="tech-sub">Cache</span>
+        </div>
+      </div>
+    </section>
+
+    <!--  CLIENT SECTION: INFINITE LOGO MARQUEE -->
+    <section class="clients-section section" id="clients">
+      <div class="section-heading reveal-up">
+        <div class="section-tag">
+          <span class="tag-icon">★</span>
+          <span>Industry Trust</span>
+        </div>
+        <h2>Our <span>Diverse</span> Clientele</h2>
+        <p>Trusted by premier industry leaders, public enterprises, and trailblazing disruptors to build high-scale solutions.</p>
+      </div>
+
+      <!-- Infinite Horizontal Marquee Showcase -->
+      <div class="marquee-wrapper reveal-up" id="clientMarqueeWrapper">
+        <div class="marquee-track" id="marqueeTrack">
+          <!-- Marquee Item 1 -->
+          <div class="client-logo-card tilt-card card-spotlight">
+            <div class="client-brand-monogram">LM</div>
+            <div class="client-brand-details">
+              <span class="brand-title">LM Logistics</span>
+              <span class="brand-meta">Supply Chain</span>
+            </div>
+          </div>
+
+          <!-- Marquee Item 2 -->
+          <div class="client-logo-card tilt-card card-spotlight">
+            <div class="client-brand-monogram">M&T</div>
+            <div class="client-brand-details">
+              <span class="brand-title">M&T Commercial</span>
+              <span class="brand-meta">Financial Services</span>
+            </div>
+          </div>
+
+          <!-- Marquee Item 3 -->
+          <div class="client-logo-card tilt-card card-spotlight">
+            <div class="client-brand-monogram text-red">🔥</div>
+            <div class="client-brand-details">
+              <span class="brand-title">Helios Energy</span>
+              <span class="brand-meta">Clean Power</span>
+            </div>
+          </div>
+
+          <!-- Marquee Item 4 -->
+          <div class="client-logo-card tilt-card card-spotlight">
+            <div class="client-brand-monogram text-yellow">☀️</div>
+            <div class="client-brand-details">
+              <span class="brand-title">The Sunshine Co.</span>
+              <span class="brand-meta">Consumer Retail</span>
+            </div>
+          </div>
+
+          <!-- Marquee Item 5 -->
+          <div class="client-logo-card tilt-card card-spotlight">
+            <div class="client-brand-monogram text-blue">J!</div>
+            <div class="client-brand-details">
+              <span class="brand-title">JUMP!E Media</span>
+              <span class="brand-meta">Entertainment</span>
+            </div>
+          </div>
+
+          <!-- Marquee Item 6 -->
+          <div class="client-logo-card tilt-card card-spotlight">
+            <div class="client-brand-monogram">DEL</div>
+            <div class="client-brand-details">
+              <span class="brand-title">Delhi Metro Transit</span>
+              <span class="brand-meta">Public Transport</span>
+            </div>
+          </div>
+
+          <!-- Marquee Item 7 -->
+          <div class="client-logo-card tilt-card card-spotlight">
+            <div class="client-brand-monogram text-red">IR</div>
+            <div class="client-brand-details">
+              <span class="brand-title">Indian Railways</span>
+              <span class="brand-meta">National Transit</span>
+            </div>
+          </div>
+
+          <!-- Marquee Item 8 -->
+          <div class="client-logo-card tilt-card card-spotlight">
+            <div class="client-brand-monogram">SNR</div>
+            <div class="client-brand-details">
+              <span class="brand-title">Senior Global</span>
+              <span class="brand-meta">Healthcare</span>
+            </div>
+          </div>
+
+          <!-- Marquee Item 9 -->
+          <div class="client-logo-card tilt-card card-spotlight">
+            <div class="client-brand-monogram text-purple">SOL</div>
+            <div class="client-brand-details">
+              <span class="brand-title">Solidarity Care</span>
+              <span class="brand-meta">Non-Profit NGO</span>
+            </div>
+          </div>
+
+          <!-- Marquee Item 10 -->
+          <div class="client-logo-card tilt-card card-spotlight">
+            <div class="client-brand-monogram">KLC</div>
+            <div class="client-brand-details">
+              <span class="brand-title">KALCO Aluminum</span>
+              <span class="brand-meta">Industrial Mfg</span>
+            </div>
+          </div>
+
+          <!-- Duplicate Set for Seamless Continuous Loop -->
+          <div class="client-logo-card tilt-card card-spotlight" aria-hidden="true">
+            <div class="client-brand-monogram">LM</div>
+            <div class="client-brand-details">
+              <span class="brand-title">LM Logistics</span>
+              <span class="brand-meta">Supply Chain</span>
+            </div>
+          </div>
+          <div class="client-logo-card tilt-card card-spotlight" aria-hidden="true">
+            <div class="client-brand-monogram">M&T</div>
+            <div class="client-brand-details">
+              <span class="brand-title">M&T Commercial</span>
+              <span class="brand-meta">Financial Services</span>
+            </div>
+          </div>
+          <div class="client-logo-card tilt-card card-spotlight" aria-hidden="true">
+            <div class="client-brand-monogram text-red">🔥</div>
+            <div class="client-brand-details">
+              <span class="brand-title">Helios Energy</span>
+              <span class="brand-meta">Clean Power</span>
+            </div>
+          </div>
+          <div class="client-logo-card tilt-card card-spotlight" aria-hidden="true">
+            <div class="client-brand-monogram text-yellow">☀️</div>
+            <div class="client-brand-details">
+              <span class="brand-title">The Sunshine Co.</span>
+              <span class="brand-meta">Consumer Retail</span>
+            </div>
+          </div>
+          <div class="client-logo-card tilt-card card-spotlight" aria-hidden="true">
+            <div class="client-brand-monogram text-blue">J!</div>
+            <div class="client-brand-details">
+              <span class="brand-title">JUMP!E Media</span>
+              <span class="brand-meta">Entertainment</span>
+            </div>
+          </div>
+          <div class="client-logo-card tilt-card card-spotlight" aria-hidden="true">
+            <div class="client-brand-monogram">DEL</div>
+            <div class="client-brand-details">
+              <span class="brand-title">Delhi Metro Transit</span>
+              <span class="brand-meta">Public Transport</span>
+            </div>
+          </div>
+          <div class="client-logo-card tilt-card card-spotlight" aria-hidden="true">
+            <div class="client-brand-monogram text-red">IR</div>
+            <div class="client-brand-details">
+              <span class="brand-title">Indian Railways</span>
+              <span class="brand-meta">National Transit</span>
+            </div>
+          </div>
+          <div class="client-logo-card tilt-card card-spotlight" aria-hidden="true">
+            <div class="client-brand-monogram">SNR</div>
+            <div class="client-brand-details">
+              <span class="brand-title">Senior Global</span>
+              <span class="brand-meta">Healthcare</span>
+            </div>
+          </div>
+          <div class="client-logo-card tilt-card card-spotlight" aria-hidden="true">
+            <div class="client-brand-monogram text-purple">SOL</div>
+            <div class="client-brand-details">
+              <span class="brand-title">Solidarity Care</span>
+              <span class="brand-meta">Non-Profit NGO</span>
+            </div>
+          </div>
+          <div class="client-logo-card tilt-card card-spotlight" aria-hidden="true">
+            <div class="client-brand-monogram">KLC</div>
+            <div class="client-brand-details">
+              <span class="brand-title">KALCO Aluminum</span>
+              <span class="brand-meta">Industrial Mfg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--  TESTIMONIALS SECTION -->
+
+    <section class="testimonials-section section" id="testimonials">
+      <div class="section-heading reveal-up">
+        <div class="section-tag">
+          <span class="tag-icon">❝</span>
+          <span>Verified Client Reviews</span>
+        </div>
+        <h2>Client <span>Stories & Success</span></h2>
+        <p>Discover how we partner with founders and enterprise leaders to build resilient, high-growth technology.</p>
+      </div>
+
+      <div class="testimonial-slider-container reveal-up">
+        <!-- Slider Controls -->
+        <button class="slider-arrow-btn prev-btn magnetic-btn" id="prevTestimonial" aria-label="Previous Testimonial">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Slider Viewport -->
+        <div class="testimonial-viewport" id="testimonialViewport">
+          <div class="testimonial-track" id="testimonialTrack">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-slide active">
+              <div class="testimonial-glass-card tilt-card card-spotlight">
+                <div class="testimonial-top">
+                  <div class="stars-gold">★★★★★</div>
+                  <span class="quote-symbol">“</span>
+                </div>
+                <p class="testimonial-quote">
+                  "Cling Info Tech Works transformed our entire product roadmap. Their engineering squad delivered our cross-platform mobile application three weeks ahead of schedule with zero defect leaks during security audits. Their proactivity is unmatched."
+                </p>
+                <div class="testimonial-author">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sarah Jenkins" class="author-photo">
+                  <div class="author-info">
+                    <b class="author-name">Sarah Jenkins</b>
+                    <span class="author-role">VP of Digital Innovation, M&T Commercial</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-glass-card tilt-card card-spotlight">
+                <div class="testimonial-top">
+                  <div class="stars-gold">★★★★★</div>
+                  <span class="quote-symbol">“</span>
+                </div>
+                <p class="testimonial-quote">
+                  "The ERP modernization that Cling built automated 70% of our manual supply chain operations. We now process thousands of daily dispatches across three continents seamlessly. They truly feel like an in-house team rather than an agency."
+                </p>
+                <div class="testimonial-author">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Michael Chang" class="author-photo">
+                  <div class="author-info">
+                    <b class="author-name">Michael Chang</b>
+                    <span class="author-role">Chief Technology Officer, LM Logistics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-glass-card tilt-card card-spotlight">
+                <div class="testimonial-top">
+                  <div class="stars-gold">★★★★★</div>
+                  <span class="quote-symbol">“</span>
+                </div>
+                <p class="testimonial-quote">
+                  "As a fast-growing startup founder, hiring the right engineering talent was my biggest hurdle. Cling’s dedicated squad took our MVP from Figma wireframes to a production-ready cloud system in 60 days flat. We raised our Series A on that build."
+                </p>
+                <div class="testimonial-author">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Rajiv Malhotra" class="author-photo">
+                  <div class="author-info">
+                    <b class="author-name">Rajiv Malhotra</b>
+                    <span class="author-role">Founder & CEO, JUMP!E Media</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-arrow-btn next-btn magnetic-btn" id="nextTestimonial" aria-label="Next Testimonial">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Pagination Dots -->
+      <div class="testimonial-dots" id="testimonialDots">
+        <button class="dot-btn active" data-slide="0" aria-label="Go to testimonial 1"></button>
+        <button class="dot-btn" data-slide="1" aria-label="Go to testimonial 2"></button>
+        <button class="dot-btn" data-slide="2" aria-label="Go to testimonial 3"></button>
+      </div>
+    </section>
+
+    <!--  HIGH-CONTRAST DARK CTA SECTION -->
+    <section class="cta-banner-section section" id="cta">
+      <div class="cta-dark-card tilt-card card-spotlight reveal-up">
+        <!-- Glowing Ambient Lighting -->
+        <div class="cta-glow glow-red" aria-hidden="true"></div>
+        <div class="cta-glow glow-blue" aria-hidden="true"></div>
+        <div class="cta-grid-pattern" aria-hidden="true"></div>
+
+        <!-- Floating ambient sparkles -->
+        <div class="cta-particles" aria-hidden="true">
+          <span class="cta-sparkle s-1"></span>
+          <span class="cta-sparkle s-2"></span>
+          <span class="cta-sparkle s-3"></span>
+          <span class="cta-sparkle s-4"></span>
+          <span class="cta-sparkle s-5"></span>
+        </div>
+
+        <div class="cta-content">
+          <div class="eyebrow-badge eyebrow-dark">
+            <span class="eyebrow-pulse"></span>
+            <span>Let's Create Tomorrow</span>
+          </div>
+
+          <h2 class="cta-title">
+            Have an idea?<br>
+            <span class="gradient-text-light">Let's build it together.</span>
+          </h2>
+
+          <p class="cta-subtitle">
+            Whether you need to scale an enterprise software ecosystem or launch a groundbreaking MVP, our engineering and strategy experts are ready to turn your concept into reality.
+          </p>
+
+          <div class="cta-actions">
+            <a class="btn btn-cta-primary magnetic-btn" href="#contact">
+              <span>Start a Project</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a class="btn btn-cta-outline magnetic-btn" href="#contact">
+              <span>Talk to Our Team</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODERN CONTACT SECTION WITH FLOATING LABELS -->
+    <section class="contact-section section" id="contact">
+      <div class="section-heading reveal-up">
+        <div class="section-tag">
+          <span class="tag-icon">✉</span>
+          <span>Initiate Collaboration</span>
+        </div>
+        <h2>Let's Start a <span>Conversation</span></h2>
+        <p>Tell us about your upcoming project, technical specifications, or timeline goals. We respond within 24 hours.</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Contact Information Cards (Left) -->
+        <div class="contact-info-column tilt-card card-spotlight reveal-left">
+          <div class="info-card-header">
+            <h3>Cling Info Tech Works Private Limited</h3>
+            <p>A trusted global software engineering and digital transformation company.</p>
+          </div>
+
+          <div class="office-locations-list">
+            <!-- Office 1: Noida HQ -->
+            <div class="office-item">
+              <div class="office-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="office-details">
+                <b>Head Office (Noida)</b>
+                <span>1001, 10th Floor, Wave One, Sector 18, Noida, Uttar Pradesh, India</span>
+              </div>
+            </div>
+
+            <!-- Office 2: Pune Hub -->
+            <div class="office-item">
+              <div class="office-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div class="office-details">
+                <b>Pune Delivery Center</b>
+                <span>2nd Floor, Atria Business Hub, Pune, Maharashtra, India</span>
+              </div>
+            </div>
+
+            <!-- Office 3: Moradabad -->
+            <div class="office-item">
+              <div class="office-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <div class="office-details">
+                <b>Moradabad Operations</b>
+                <span>Moradabad, Uttar Pradesh, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="quick-contact-grid">
+            <a href="tel:+918264643302" class="quick-contact-card">
+              <div class="quick-icon icon-blue">📞</div>
+              <div class="quick-info">
+                <span class="quick-label">Direct Phone</span>
+                <span class="quick-val">+91 82646 43302</span>
+              </div>
+            </a>
+
+            <a href="mailto:info@clinginfotech.com" class="quick-contact-card">
+              <div class="quick-icon icon-red">✉</div>
+              <div class="quick-info">
+                <span class="quick-label">Email Support</span>
+                <span class="quick-val">info@clinginfotech.com</span>
+              </div>
+            </a>
+
+            <div class="quick-contact-card">
+              <div class="quick-icon icon-purple">⏰</div>
+              <div class="quick-info">
+                <span class="quick-label">Business Hours</span>
+                <span class="quick-val">Mon–Sat: 9:00 AM – 7:00 PM IST</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modern Glass Contact Form (Right) -->
+        <div class="contact-form-column tilt-card card-spotlight reveal-right">
+          <form id="contactForm" class="contact-glass-form" novalidate>
+            <div class="form-title-row">
+              <h3>Send us a Message</h3>
+              <p>Fill out the form below and an engineering consultant will reach back.</p>
+            </div>
+
+            <!-- Form Row: Name & Email -->
+            <div class="form-grid">
+              <!-- Floating Label Input: Full Name -->
+              <div class="floating-field">
+                <input type="text" id="contactName" required placeholder=" " autocomplete="name">
+                <label for="contactName">Full Name *</label>
+                <span class="field-error" id="nameError"></span>
+              </div>
+
+              <!-- Floating Label Input: Email -->
+              <div class="floating-field">
+                <input type="email" id="contactEmail" required placeholder=" " autocomplete="email">
+                <label for="contactEmail">Email Address *</label>
+                <span class="field-error" id="emailError"></span>
+              </div>
+            </div>
+
+            <!-- Form Row: Phone & Company -->
+            <div class="form-grid">
+              <!-- Floating Label Input: Phone -->
+              <div class="floating-field">
+                <input type="tel" id="contactPhone" placeholder=" " autocomplete="tel">
+                <label for="contactPhone">Phone Number</label>
+              </div>
+
+              <!-- Floating Label Input: Company -->
+              <div class="floating-field">
+                <input type="text" id="contactCompany" placeholder=" " autocomplete="organization">
+                <label for="contactCompany">Company / Organization</label>
+              </div>
+            </div>
+
+            <!-- Project Type Dropdown / Select -->
+            <div class="floating-field select-field">
+              <select id="contactService" required>
+                <option value="" disabled selected hidden></option>
+                <option value="Mobile App Development">Mobile App Development (iOS / Android)</option>
+                <option value="Web Design & Modern Web Apps">Web Design & Modern Web Architecture</option>
+                <option value="ERP & Enterprise Systems">Custom ERP & Enterprise Software</option>
+                <option value="AI & Machine Learning">AI, Machine Learning & LLM Integrations</option>
+                <option value="Digital Marketing & SEO">Digital Growth & Performance Marketing</option>
+                <option value="Dedicated Engineering Squad">Dedicated IT Squad for Entrepreneurship</option>
+                <option value="Other Technology Advisory">Other Technology Advisory</option>
+              </select>
+              <label for="contactService">Project Type / Requirement *</label>
+              <span class="select-arrow">▼</span>
+            </div>
+
+            <!-- Floating Label Input: Message -->
+            <div class="floating-field textarea-field">
+              <textarea id="contactMessage" required placeholder=" " rows="4"></textarea>
+              <label for="contactMessage">Project Details or Requirements *</label>
+              <span class="field-error" id="messageError"></span>
+            </div>
+
+            <!-- Submit Button & Feedback -->
+            <div class="form-submit-row">
+              <button class="btn btn-primary btn-submit magnetic-btn" type="submit" id="submitBtn">
+                <span class="btn-text">Submit Message</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Animated Success / Error Message -->
+            <div class="form-feedback-banner" id="formMessage" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Agency Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand-col">
+        <a class="logo" href="#home" aria-label="Cling home">
+          <img src="image.png" class = "logo">
+          <span class="logo-text">ling</span>
+        </a>
+        <p class="footer-bio">
+          Cling Info Tech Works is a modern technology and IT solutions agency turning bold business ideas into scalable, secure software ecosystems.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#team">Leadership Team</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#solutions">Solutions Bento</a></li>
+          <li><a href="#resources">Technologies</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Core Services</h4>
+        <ul>
+          <li><a href="#services">App Development</a></li>
+          <li><a href="#services">Web Architecture</a></li>
+          <li><a href="#services">ERP Solutions</a></li>
+          <li><a href="#services">Digital Marketing</a></li>
+          <li><a href="#services">Dedicated Squads</a></li>
+          <li><a href="#solutions">AI & LLMs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Global Locations</h4>
+        <ul>
+          <li><span>Noida, Uttar Pradesh</span></li>
+          <li><span>Pune, Maharashtra</span></li>
+          <li><span>Moradabad, Uttar Pradesh</span></li>
+          <li><span>Dubai, UAE</span></li>
+          <li><span>United States & Singapore</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p>© <span id="year">2026</span> Cling Info Tech Works Private Limited. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#home">Privacy Policy</a>
+          <span>·</span>
+          <a href="#home">Terms of Service</a>
+          <span>·</span>
+          <a href="#home">Security Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
